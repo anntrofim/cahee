@@ -1,0 +1,82 @@
+@import "_variables.scss";
+
+.header {
+	position: relative;
+	height: 115vh;
+	background: url(../images/header-bg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__menu {
+		height: 15vh;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__ref {
+		text-transform: uppercase;
+		color: $black;
+		font-weight: bold;
+		border-top: 3px solid transparent;
+		@include transition;
+
+		&:hover {
+			text-decoration: none;
+			color: inherit;
+			border-top-color: $corale;
+			@include transition;
+		}
+	}
+
+	&__content {
+		margin-top: 10%;
+		padding: 0;
+	}
+
+	&__title {
+		font-weight: 900;
+		text-transform: capitalize;
+		font-size: 60px;
+	}
+
+	&__txt {
+		font-size: 17px;
+	}
+
+	&__btn {
+		border: none;
+		background-color: $black;
+		color: $white;
+		text-transform: uppercase;
+		padding: 10px;
+		width: 50%;
+		box-shadow: 0 1px 5px 0 $black;
+		@include transition;
+
+		&:hover {
+			background-color: $corale;
+			@include transition;
+		}
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			background-color: #8d131d;
+		}
+	}
+
+	&__scroll {
+		width: 24px;
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

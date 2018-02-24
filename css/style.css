@@ -1,0 +1,82 @@
+.header {
+  position: relative;
+  height: 115vh;
+  background: url(../images/header-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .header__menu {
+    height: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header__nav {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header__ref {
+    text-transform: uppercase;
+    color: #262626;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .header__ref:hover {
+      text-decoration: none;
+      color: inherit;
+      border-top-color: #ff6033;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+  .header__content {
+    margin-top: 10%;
+    padding: 0; }
+  .header__title {
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 60px; }
+  .header__txt {
+    font-size: 17px; }
+  .header__btn {
+    border: none;
+    background-color: #262626;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 #262626;
+    box-shadow: 0 1px 5px 0 #262626;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+    .header__btn:hover {
+      background-color: #ff6033;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+    .header__btn:focus {
+      outline: none; }
+    .header__btn:active {
+      background-color: #8d131d; }
+  .header__scroll {
+    width: 24px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: url(); }
