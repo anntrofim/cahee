@@ -192,6 +192,7 @@
   .services__title {
     font-size: 90px;
     font-weight: bold;
+    text-transform: capitalize;
     color: #fff;
     position: absolute;
     top: 50%;
