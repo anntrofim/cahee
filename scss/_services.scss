@@ -4,6 +4,7 @@
 	background-color: $services-color;
 	position: relative;
 	height: 95vh;
+	overflow: hidden;
 
 	&__container {
 		height: 100%;
@@ -43,7 +44,7 @@
 		}
 
 		&:hover .services__icon {
-			filter: brightness(6);
+			filter: brightness(7);
 			@include transition;
 		}
 	}

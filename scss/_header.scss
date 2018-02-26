@@ -6,6 +6,7 @@
 	background: url(../images/header-bg.png) no-repeat;
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 
 	&__menu {
 		height: 15vh;
@@ -15,7 +16,8 @@
 	}
 
 	&__logo {
-		width: 80%;
+		width: 45%;
+		// font-family: 'Pacifico', cursive;
 	}
 
 	&__nav {
