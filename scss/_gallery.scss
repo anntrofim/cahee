@@ -46,9 +46,13 @@
 		justify-content: space-between;
 	}
 
+	&__btn-cont {
+		margin: 15px auto 0;
+	}
+
 	&__btn {
-		margin-top: 15px;
-		width: 200px;
+		margin: 0 0 0 -15px;
+		width: calc(100% + 30px);
 		@include btn;
 		@include transition;
 

@@ -1,11 +1,130 @@
 @import "_variables.scss";
 
 .blog {
+	background-color: #b07cf7;
+	text-align: center;
+	padding: 50px 0 80px;
+	overflow: hidden;
+	color: $white;
 
+	&__title {
+		@include title;
+	}
 
+	&__txt {
+		font-size: 17px;
+		width: 55%;
+		margin: 0 auto;
+	}
 
+	// &__art-ref {
+	// 	text-decoration: none;
+	// 	color: $white;
+	// }
 
+	&__article {
+		background-repeat: no-repeat;
+		background-position: bottom;
+		background-size: calc(100% - 30px);
+		margin: 30px auto;
+		text-align: left;
+		padding: 20px 40px;
+		position: relative;
+		filter: drop-shadow(0 1px 5px $black);
 
+		&:hover .blog__art-bg {
+			opacity: .3;
+			@include transition;
+		}
+		&:hover .blog__ref:hover {
+			// color: #b07cf7;
+			color: #f72b3b;
+			text-decoration: none;
+			@include transition;
+		}
 
+		&--1 {
+			background-image: url(../images/art1.png);
+		}
+		&--2 {
+			background-image: url(../images/art2.png);
+		}
+		&--3 {
+			background-image: url(../images/art3.png);
+		}
+	}
 
+	&__art-bg {
+		width: calc(100% - 30px);
+		background-color: #b07cf7;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 15px;
+		opacity: 0;
+		@include transition;
+	}
+
+	&__date {
+		font-size: 32px;
+		font-weight: bold;
+		width: 22%;
+		line-height: .9;
+		padding: 5px;
+		text-align: center;
+		border-radius: 5px;
+		background-color: rgba(38, 38, 38, .6);
+		margin-bottom: 30%;
+	}
+
+	&__arttitle {
+		text-decoration: none;
+		color: $white;
+		font-size: 20px;
+		font-weight: bold;
+		position: relative;
+		z-index: 1;
+		@include transition;
+
+		&:hover {
+		text-decoration: none;
+		color: #f72b3b;
+		@include transition;
+		}
+	}
+
+	&__auth-edit {
+		margin-bottom: 0;
+		font-size: 13px;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__ref {
+		text-decoration: none;
+		color: $white;
+		@include transition;
+	}
+
+	&__btn-cont {
+		margin: 15px auto 0;
+	}
+
+	&__btn {
+		margin: 0 0 0 -15px;
+		width: calc(100% + 30px);
+		@include btn;
+		@include transition;
+
+		&:hover {
+			background-color: #f72b3b;
+			@include transition;
+		}
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			background-color: #941b24;
+		}
+	}
 }
