@@ -1,7 +1,7 @@
 @import "_variables.scss";
 
 .services {
-	background-color: $services-color;
+	background-color: #70bfff;
 	position: relative;
 	height: 95vh;
 	overflow: hidden;
@@ -15,7 +15,6 @@
 	&__items {
 		position: relative;
 		left: 7%;
-		width: 35%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -69,9 +68,7 @@
 	}
 
 	&__title {
-		font-size: 90px;
-		font-weight: bold;
-		text-transform: capitalize;
+		@include title;
 		color: $white;
 		position: absolute;
 		top: 50%;

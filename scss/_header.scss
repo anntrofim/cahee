@@ -2,14 +2,14 @@
 
 .header {
 	position: relative;
-	height: 115vh;
+	// height: 115vh;
 	background: url(../images/header-bg.png) no-repeat;
 	background-position: center;
 	background-size: cover;
 	overflow: hidden;
 
 	&__menu {
-		height: 15vh;
+		padding: 3% 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -17,7 +17,6 @@
 
 	&__logo {
 		width: 45%;
-		// font-family: 'Pacifico', cursive;
 	}
 
 	&__nav {
@@ -42,7 +41,7 @@
 	}
 
 	&__content {
-		margin-top: 10%;
+		margin: 10% 0 30%;
 		padding: 0;
 	}
 
@@ -57,13 +56,8 @@
 	}
 
 	&__btn {
-		border: none;
-		background-color: $black;
-		color: $white;
-		text-transform: uppercase;
-		padding: 10px;
 		width: 50%;
-		box-shadow: 0 1px 5px 0 $black;
+		@include btn;
 		@include transition;
 
 		&:hover {
@@ -81,7 +75,7 @@
 	&__scroll {
 		width: 24px;
 		position: absolute;
-		bottom: 5%;
+		bottom: 8%;
 		left: 50%;
 		transform: translateX(-50%);
 	}

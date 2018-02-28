@@ -1,7 +1,7 @@
 @import "_variables.scss";
 
 .about {
-	background-color: $about-color;
+	background-color: #00bbbb;
 	position: relative;
 	height: 85vh;
 	color: $white;
@@ -30,9 +30,7 @@
 	}
 
 	&__title {
-		font-weight: bold;
-		text-transform: capitalize;
-		font-size: 90px;
+		@include title;
 	}
 
 	&__txt {

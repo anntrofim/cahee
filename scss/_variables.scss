@@ -1,14 +1,25 @@
 $black: #262626;
 $white: #fff;
-// $corale: #f25b04;
 $corale: #ff6033;
-$about-color: #00bbbb;
-$services-color: #70bfff;
-$gallery-color: #ffe92f;
-
-
 
 @mixin transition {
 	transition: all .3s ease;
 }
+
+@mixin title {
+	font-size: 90px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+@mixin btn {
+	padding: 10px;
+	border: none;
+	background-color: $black;
+	box-shadow: 0 1px 5px 0 $black;
+	color: $white;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
 

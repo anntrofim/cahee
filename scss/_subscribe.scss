@@ -1,0 +1,52 @@
+@import "_variables.scss";
+
+.subscribe {
+	background-color: $white;
+	padding: 10% 0;
+	background: url(../images/subscribe-bg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+
+	&__title {
+		font-size: 40px;
+		@include title;
+	}
+
+	&__txt {
+		font-size: 17px;
+		width: 50%;
+	}
+
+	&__email {
+		width: 100%;
+		padding: 13px;
+		font-size: 15px;
+		border: 1px solid $black;
+
+		&:focus {
+			outline: none;
+			border: 1px solid #96b92c;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		@include btn;
+		@include transition;
+
+		&:hover {
+			background-color: #96b92c;
+			@include transition;
+		}
+		&:focus {
+			outline: none;
+		}
+		&:active {
+			background-color: #5f761b;
+		}
+	}
+}
+
